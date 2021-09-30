@@ -20,6 +20,31 @@ Vous pouvez [soutenir les projets sur lesquels je travaille](https://vasur.fr/sp
 
 -----
 
+Ce projet fait partie du "DevPas Components Pack" qui permet d'installer tous mes composants et librairies en une fois.
+https://github.com/DeveloppeurPascal/DevPas-Components-Pack
+
+-----
+
+TODO :
+
+* TDBEFDConnectionProxy : pour proposer un TFDConnection différent selon la plateforme et la configuration de compilation (DEBUG / RELEASE)
+* TDBEADOConnectionProxy : pour proposer un TADOConnection différent selon la plateforme et la configuration de compilation (DEBUG / RELEASE)
+* TDBESQLConnectionProxy : pour proposer un TSQLConnection différent selon la plateforme et la configuration de compilation (DEBUG / RELEASE)
+
+* TDBEFDMemTable : 
+-> modifie certaines fonctionnalités du mode persistant afin d'être certain de toujours enregistrer les données
+-> ajout de la possibilité de lire les données depuis une URL directement
+
+* TDBEFDDatabasePath : modifie le nom de la base et son chemin pour les drivers SQLite, Interbase & co en tenant compte des chemins standards selon la plateforme
+
+* TDBEFDMaintainDBStructure : permet de gérer la création et les modifications d'une base de données embarquée à partir de scripts appliqués sur une connexion
+
+* TDBEINIFileTable : utilise un fichier INI comme table en mémoire (1 seul enregistrement, les champs étant sous la forme "key.value"
+
+* TDBERegistryTable : utilise une clé de la base de registres comme table en mémoire (1 seul enregistrement, les champs étant sous la forme "keypath.value"
+
+-----
+
 Si vous ne connaissez pas Delphi et le langage Pascal, profitez de la version Academic (pour les étudiants, enseignants et établissements d'enseignement) ou Community Edition (gratuite pour une utilisation personnelle) disponibles chez Embarcadero (rubrique "outils gratuits").
 En entreprise vous pouvez aussi tester Delphi avec la version d'évaluation.
 https://www.embarcadero.com/products/delphi
